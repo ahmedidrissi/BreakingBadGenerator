@@ -1,0 +1,152 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 2rem;
+}
+
+.primary-heading {
+  color: white;
+  font-family: "heart_breaking_badregular";
+  font-size: 7rem;
+}
+
+.copyright-text {
+  font-family: sans-serif;
+  font-size: 1.25rem;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-top-huge {
+  margin-top: 10rem;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+
+.btn, .btn:link, .btn:visited {
+  margin-top: 1rem;
+  display: inline-block;
+  color: white;
+  font-family: "heart_breaking_badregular";
+  font-size: 3rem;
+  width: 80%;
+  height: 4rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(to right bottom, rgba(53, 87, 70, 0.9), rgba(63, 126, 55, 0.9));
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  left: 160%;
+}
+.btn:hover, .btn:link:hover, .btn:visited:hover {
+  transform: translateY(-3px);
+}
+.btn:active, .btn:focus, .btn:link:active, .btn:link:focus, .btn:visited:active, .btn:visited:focus {
+  outline: none;
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.row {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+.row:not(:last-child) {
+  margin-bottom: 0;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row [class^=col-] {
+  float: left;
+}
+.row [class^=col-1]:not(:last-child) {
+  margin-right: 1rem;
+}
+.row .col-1-of-2 {
+  width: calc((100% - 1rem) / 2);
+}
+.row .col-1-of-3 {
+  width: calc((100% - 2 * 1rem) / 6);
+}
+.row .col-2-of-3 {
+  width: calc((2 * ((100% - 2 * 1rem) / 3 )) + 1rem);
+}
+.row .col-1-of-4 {
+  width: calc((100% - 3 * 1rem) / 4);
+}
+.row .col-2-of-4 {
+  width: calc((2 * ((100% - 3 * 1rem) / 4 )) + 1rem);
+}
+.row .col-3-of-4 {
+  width: calc((3 * ((100% - 3 * 1rem) / 4 )) + 2 * 1rem);
+}
+
+body {
+  background-image: url(../img/bg-img1.jpg);
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+body .header-section {
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.5);
+  height: 8rem;
+  padding-top: 1rem;
+}
+body .footer-section {
+  position: absolute;
+  top: 98%;
+  width: 100%;
+}
+
+.input-bar {
+  border-radius: 5px;
+  margin: 2.5% 20% 1%;
+  display: inline-block;
+  width: 60%;
+  height: auto;
+  font-size: 3rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  outline: none;
+  border: none;
+  color: #355746;
+  text-align: center;
+}
+.input-bar::placeholder {
+  color: #355746;
+}
+
+.uppercase {
+  color: #3f7e37;
+}
+
+/*# sourceMappingURL=main.css.map */
