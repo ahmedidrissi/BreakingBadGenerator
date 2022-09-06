@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="font/stylesheet.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>{% block title %}Home{% endblock %}</title>
+</head>
+
+<body>
+    <header class="header-section">    
+        <div class="row header">
+            <div class="col-1-of-2 header__title">
+                <h1 class="primary-heading"><span class="uppercase">B</span>reaking <span class="uppercase">B</span>ad</h1>
+            </div>
+  
+            <div class="col-1-of-2 row header__items">
+                <div class="col-1-of-3">
+                    <button type="submit" href="name" class="header__items--btn btn">Show</button>
+                </div>
+                <div class="col-1-of-3">
+                    <button class="header__items--btn btn">Info</button>
+                </div>
+                <div class="col-1-of-3">
+                    <button class="header__items--btn btn">Clear</button>
+                </div>
+            </div>  
+        </div>
+  
+    </header>
+    <div class="container">{% block content %} {% endblock %}</div>
+  
+    <footer class="footer-section"><p class="copyright-text">© 2022  Breaking Bad Generator</p></footer>
+</body>
+  
+</html>
