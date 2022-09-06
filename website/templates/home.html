@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='font/stylesheet.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+    <title>Home</title>
+</head>
+
+<body>
+    <header class="header-section">    
+        <div class="row header">
+            <div class="col-1-of-2 header__title">
+                <h1 class="primary-heading"><span class="uppercase">B</span>reaking <span class="uppercase">B</span>ad generator</h1>
+            </div>
+        </div> 
+    </header>
+
+    <form method="POST">
+        <input
+          type="text"
+          class="input-bar"
+          id="textInput"
+          name="textInput"
+          placeholder="Type here"
+        />
+        <div class="col-1-of-2 row header__items">
+            <div class="col-1-of-3">
+                <button type="submit" class="header__items--btn btn">Show</button>
+            </div>
+            <div class="col-1-of-3">
+                <button class="header__items--btn btn">Infos</button>
+            </div>
+            <div class="col-1-of-3">
+                <button class="header__items--btn btn" onclick="clearImage()">Clear</button>
+            </div>
+        </div>  
+    </form>
+    <br/>
+    <br/>
+    <div align="center">
+        <img src="{{ url_for('static', filename=background) }}"  alt="Result" width="700" height="auto"/>
+    </div>
+
+    <audio id="BreakingBadTheme" name="BreakingBadTheme" src="{{ url_for('static', filename='Breaking_Bad_Theme.mp3') }}" loop="true" autoplay >
+        <p>If you are reading this, it is because your browser does not support the audio element.</p>
+    </audio>
+
+    <script>
+        var audio = document.getElementById("BreakingBadTheme");
+        audio.volume = 0.005;
+    </script>
+
+    <footer class="footer-section"><p class="copyright-text">© 2022  Breaking Bad Generator / Front-End : LEZRAK Ahmed / Back-End : IDRISSI Ahmed</p></footer>
+</body>
+  
+</html>
