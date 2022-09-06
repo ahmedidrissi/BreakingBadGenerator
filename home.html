@@ -1,0 +1,33 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+<h1 align="center">Breaking Bad Generator</h1>
+<form method="POST">
+  <input
+    type="text"
+    class="form-control"
+    id="textInput"
+    name="textInput"
+    placeholder="Type here"
+  />
+  <br/>
+  <div align="center">
+    <button type="submit" class="btn btn-primary">Show</button>
+  </div>
+</form>
+<br/>
+<div align="center">
+  <img src="{{ url_for('static', filename=background) }}"  alt="Result" width="800" height="auto"/>
+</div>
+<br/>
+<div align="center">
+  <button type="button" class="btn btn-primary" onclick="clearImage()">Clear</button>
+</div>
+<br/>
+<audio id="BreakingBadTheme" name="BreakingBadTheme" src="{{ url_for('static', filename='Breaking_Bad_Theme.mp3') }}" loop="true" autoplay >
+  <p>If you are reading this, it is because your browser does not support the audio element.</p>
+</audio>
+<script>
+  var audio = document.getElementById("BreakingBadTheme");
+  audio.volume = 0.005;
+</script>
+{% endblock %}
