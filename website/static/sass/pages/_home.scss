@@ -1,0 +1,41 @@
+body {
+  background-image: url(../img/bg-img21.jpg);
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+
+  .header-section {
+    box-shadow: 0 1.5rem 3rem rgba(black,.5);
+    height: 8rem;
+    padding-top: 1rem;
+  }
+
+  .footer-section {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+
+  }
+}
+
+.input-bar {
+  border-radius: 5px;
+  margin: 10% 20% 0;
+  display: inline-block;
+  width: 60%;
+  height: auto;
+  font-size: 3rem;
+  background-color: rgba(white, .7);
+  outline: none;
+  border: none;
+  color: $green-color-dark;
+  text-align: center;
+
+  &::placeholder {
+    color: $green-color-dark;
+  }
+}
+
+.uppercase {
+  color: $green-color-light;
+}

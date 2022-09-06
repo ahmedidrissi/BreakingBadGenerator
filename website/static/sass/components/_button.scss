@@ -1,0 +1,28 @@
+.btn, .btn:link, .btn:visited {
+  margin-top: 1rem;
+  display: inline-block;
+  color: white;
+  font-family: 'heart_breaking_badregular';
+  font-size: 3rem;
+  width: 80%;
+  height: 4rem;
+  border: none;
+  border-radius: .5rem;
+  background-image: linear-gradient(to right bottom, rgba($green-color-dark, .9), rgba($green-color-light, .9));
+  box-shadow: 0 1.5rem 3rem rgba(black, .2);
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  left: 15%;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(black, .2);
+  }
+}
