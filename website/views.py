@@ -19,12 +19,12 @@ def home():
         else:
             image = 'img/bg-img4.jpg'
         
-    return render_template("home.html", background=image)
+    return render_template("index.html", background=image)
 
 @views.route('/clear-image', methods=['POST'])
 def clear_image():
     image = 'img/bg-img4.jpeg'
-    return render_template("home.html", background=image)
+    return render_template("index.html", background=image)
 
 def generate_image(text):
     bbg = generator.BreakingBadGenerator(text, "website/static/img/bg-img4.jpg")
