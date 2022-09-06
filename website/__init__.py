@@ -8,7 +8,7 @@ DB_NAME = "database.db"
 
 def create_app():
     app = Flask(__name__)
-    app.config['SECRET_KEY'] = 'hjshjhdjah kjshkjdhjs'
+    app.config['SECRET_KEY'] = 'mqkjfmkrzokznk16545612151djbsjdj@!!?105ee5d2d2d5f'
 
     from .views import views
 
